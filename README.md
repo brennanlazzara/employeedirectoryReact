@@ -1,3 +1,43 @@
+# Employee Directory
+
+This is composed of two main folders (public/src). This is compose of mulitple files (App.js, index.js, index.html ect..) This is also composed of multiple components with css style files attached (Header, Table, Search)
+
+## USER STORY
+As a user, I want to be able to view my entire employee directory at once so that I have quick access to their information.
+
+## SCREENSHOT OF THE APPLICATION
+![GIF](src/assets/employeeDirectoryReact-ScreenShot.png)
+
+## Heroku
+
+This is where the main website will be launched 
+
+
+## Langauges / Frameworks Used
+
+HTML
+CSS/BOOTSTRAP/REACTSTRAP
+JAVASCRIPT
+NODE.JS
+REACT.JS
+
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## Link
+https://immense-island-96660.herokuapp.com/
+
+https://github.com/BrennanPredmore/employeedirectoryReact
+
+## License
+No License required. These are public pages. 
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
