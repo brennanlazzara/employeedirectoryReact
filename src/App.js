@@ -44,11 +44,9 @@ function App() {
 .then(function (response) {
   // handle success
   setEmployees(response.data.results)
-  console.log(response);
 })
 .catch(function (error) {
   // handle error
-  console.log(error);
 })
 .then(function () {
   // always executed
