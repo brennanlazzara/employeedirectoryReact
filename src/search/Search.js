@@ -1,16 +1,15 @@
 import React from 'react';
-import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
+import { Form, FormGroup, Label, Input } from 'reactstrap';
 
 import './search.css'
 
-function Search() {
+function Search(props) {
     return (
     <Form>
       <FormGroup>
         <Label for="exampleEmail"></Label>
-        <Input type="email" name="email" id="exampleEmail" placeholder="Filter by First Name" />
+        <Input onChange={(e) => props.setFilterText(e.target.value)} type="text" placeholder="Filter by First Name" />
       </FormGroup>
-      <Button>Submit</Button>
     </Form>)
 };
 

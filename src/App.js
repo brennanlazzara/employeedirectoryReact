@@ -9,12 +9,38 @@ import './App.css';
 
 
 function App() {
-  // Declare a new state variable, which we'll call "count"
+  // Declare a new state variable to set all employees
   const [employees, setEmployees] = useState([]);
+
+  // Declare a new state to filter 
+  const [filterText, setFilterText] = useState('');
+  const filteredEmployees = employees.filter((e) => {
+    // By first name
+    if(e.name.first.toLowerCase().includes(filterText.toLowerCase()) ) {
+      return true;
+    }
+     // By lame name
+    else if(e.name.last.toLowerCase().includes(filterText.toLowerCase()) ) {
+      return true;
+    }
+     // By email
+    else if(e.email.toLowerCase().includes(filterText.toLowerCase()) ) {
+      return true;
+    }
+    // By Cell Number
+    else if(e.cell.includes(filterText) ) {
+      return true;
+    }
+    else {
+      return false
+    }
+  })
+
+  
 
   useEffect(()=> {  
     // Make a request for a user with a given ID
-    axios.get('https://randomuser.me/api/?results=50')
+    axios.get('https://randomuser.me/api/?results=50&nat=us')
 .then(function (response) {
   // handle success
   setEmployees(response.data.results)
@@ -34,8 +60,8 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Search />
-      <Table employees={employees} />
+      <Search setFilterText={setFilterText} />
+      <Table employees={filteredEmployees} />
     </div>
   );
 }
