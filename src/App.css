@@ -1,3 +1,8 @@
-h1 {
-  text-align: center;
+body {
+  background-image: url('./assets/aerial-architectural-design-architecture-buildings-373912.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
 }

@@ -1,0 +1,12 @@
+h1 {
+    font-size: 3.5rem;
+    text-align: center;
+    color: #ffffff;
+    text-decoration: underline;
+    text-shadow:
+    3px 3px 0 blue,
+  -1px -1px 0 red,  
+   1px -1px 0 red,
+   -1px 1px 0 red,
+    1px 1px 0 red;
+  }
