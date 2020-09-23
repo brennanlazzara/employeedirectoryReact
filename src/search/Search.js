@@ -8,7 +8,7 @@ function Search(props) {
     <Form>
       <FormGroup>
         <Label for="exampleEmail"></Label>
-        <Input onChange={(e) => props.setFilterText(e.target.value)} type="text" placeholder="Filter by First Name" />
+        <Input style={{textAlign: 'center'}} onChange={(e) => props.setFilterText(e.target.value)} type="text" placeholder="Filter by first/last Name, email, or number..." />
       </FormGroup>
     </Form>)
 };
